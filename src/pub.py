@@ -19,3 +19,11 @@ class Pub:
     def add_drink(self, drink):
         drink == self.drinks
         self.drinks.append(drink)
+
+    def check_customer_age(self, customer):
+        for customer in self.customer.age:
+            if customer >= 18:
+                return True
+        else:
+            return "You're barred!"
+
