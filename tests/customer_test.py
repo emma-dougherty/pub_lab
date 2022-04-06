@@ -4,7 +4,7 @@ from src.pub import Pub
 
 class TestCustomer(unittest.TestCase):
     def setUp(self):
-        self.customer = Customer("Jack Jarvis", 6.50)
+        self.customer = Customer("Jack Jarvis", 6.50, 76), 
         self.pub = Pub("The Clansman", 200.00)
         self.drinks = [
             {"name": "Tennents",
@@ -14,9 +14,6 @@ class TestCustomer(unittest.TestCase):
             "price": 4 
             }
         ]
-
-    def test_buy_drink(self):
-        self.assertEquals
 
 
     def test_total_cash(self):

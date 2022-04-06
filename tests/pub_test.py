@@ -2,9 +2,12 @@ import unittest
 from src.pub import Pub
 from src.customer import Customer
 
+
+
+
 class TestPub(unittest.TestCase):
     def setUp(self):
-        self.customer = Customer("Jack Jarvis", 6.50)
+        self.customer = Customer("Jack Jarvis", 6.50, 76)
         self.pub = Pub("The Clansman", 200.00)
         self.drinks = [
             {"name": "Tennents",
@@ -33,5 +36,7 @@ class TestPub(unittest.TestCase):
 
 
 def test_sell_drink_to_customer(self):
-         self.assertEqual(2.50, self.customer.remove_customer_cash)
-         self.assertEqual(204.00, self.test_increase_total_cash)
+        self.assertEqual(2.50, self.customer.remove_customer_cash)
+        self.assertEqual(204.00, self.test_increase_total_cash)
+
+def test_check_customer_age(self):
